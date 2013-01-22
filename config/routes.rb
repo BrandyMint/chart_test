@@ -52,6 +52,10 @@ ChartTest::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'index#index'
 
+  match '/pie', :to => 'index#pie'
+  match '/bar', :to => 'index#bar'
+  match '/table', :to => 'index#table'
+  match '/quote', :to => 'index#quote'
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
