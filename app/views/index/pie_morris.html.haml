@@ -1,0 +1,14 @@
+#graph
+%pre#code
+  :preserve
+    
+    Morris.Donut({
+      element: 'graph',
+      data: [
+        {value: 45, label: 'iOS', formatted: 'менее 45%'},
+        {value: 35, label: 'Android', formatted: 'более чем 35%'},
+        {value: 15, label: 'Windows Phone', formatted: 'примерно 15%'},
+        {value: 5, label: 'Other', formatted: 'ориентировочно 5%'}
+      ],
+      formatter: function (x, data) { return data.formatted; }
+    });

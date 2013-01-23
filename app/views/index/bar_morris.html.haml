@@ -1,0 +1,17 @@
+#graph
+%pre#code
+  :preserve
+    
+    // Use Morris.Bar
+    Morris.Bar({
+      element: 'graph',
+      data: [
+        {x: '2012 Квартал 2', y: 3, z: 2, a: null},
+        {x: '2012 Квартал 3', y: 2, z: 3, a: 2},
+        {x: '2012 Квартал 4', y: 1, z: 3, a: 4},
+        {x: '2013 Квартал 1', y: 3, z: 4, a: 3}
+      ],
+      xkey: 'x',
+      ykeys: ['y', 'z', 'a'],
+      labels: ['iOS', 'Android', 'WinPhone']
+    });

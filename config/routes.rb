@@ -53,7 +53,9 @@ ChartTest::Application.routes.draw do
   root :to => 'index#index'
 
   match '/pie', :to => 'index#pie'
+  match '/pie_morris', :to => 'index#pie_morris'
   match '/bar', :to => 'index#bar'
+  match '/bar_morris', :to => 'index#bar_morris'
   match '/table', :to => 'index#table'
   match '/quote', :to => 'index#quote'
   # See how all your routes lay out with "rake routes"

@@ -13,7 +13,21 @@ class IndexController < ApplicationController
     end
   end
 
+  def pie_morris
+
+    respond_to do |format|
+      format.html
+    end
+  end
+
   def bar
+
+    respond_to do |format|
+      format.html
+    end
+  end
+
+  def bar_morris
 
     respond_to do |format|
       format.html
